@@ -1,0 +1,30 @@
+.animation {
+  color: 0;
+}
+
+.image {
+  display: flex;
+}
+
+.photo {
+  display: block;
+}
+
+.test {
+  align-items: center;
+}
+
+.animation_title {
+  color: blue;
+}
+p {
+  color: red;
+}
+.aller p {
+  animation-duration: 5s;
+  animation-name: glissement;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+/*# sourceMappingURL=style.css.map */
