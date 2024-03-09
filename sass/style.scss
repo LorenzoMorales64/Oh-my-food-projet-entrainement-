@@ -1,19 +1,16 @@
 * {
     font-family: "Raleway", sans-serif;
   }
+.couleurFond {
+    background-color: #f2f2f2 ;
+}
 .logo {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     padding: 20px;
-}
-.animation {
-    color: red($color: #000000);
-}
-.image {
-    display: flex;
 }
 .lieu {
     box-sizing: border-box;
@@ -21,7 +18,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #f2f2f2;
+    background-color: grey;
+    box-shadow: 25px 25px 20px -20px rgba(0,0,0,0.45);
 }
 .menu {
     box-sizing: border-box;
@@ -33,12 +31,12 @@
 .bouton {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     font-size: 17px;
-    padding: 4px 19px;
+    padding: 20px;
     border-radius: 25px;
     border: 2px solid var(--filter-bg-color);
-    background-color: purple;
+    background-color: #FF79DA;
     cursor: pointer;
     height: 42px;
     box-sizing: border-box;
@@ -47,6 +45,12 @@
 .bouton:hover {
     background-color: pink;
     border: 2px solid var(--grey-tint-2, #d9d9d9);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+
 }
 .bold {
     font-weight: 700;
@@ -59,7 +63,24 @@
     align-items: center;
 }
 .boutonRectangle {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    padding: 20px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.boutonRectangle:hover {
+    background-color: none;
+    border: 2px solid var(--grey-tint-2, #d9d9d9);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
 .restau {
     box-sizing: border-box;
@@ -67,18 +88,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    background-color: #f2f2f2;
 }
 .boiteImg {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #f2f2f2;
+    gap: 20px;
+    flex-wrap: nowrap;
 }
-img {
+.imgRestau {
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 150px;
     height: 100px;
 }
 
