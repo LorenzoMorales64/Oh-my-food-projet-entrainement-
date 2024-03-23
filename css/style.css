@@ -1,9 +1,26 @@
+@charset "UTF-8";
 * {
   font-family: "Raleway", sans-serif;
 }
 
+/* couleur */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .couleurFond {
   background-color: #f2f2f2;
+}
+
+.main-container {
+  max-width: 1980px;
+}
+
+.logo-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
 }
 
 .logo {
@@ -12,7 +29,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  width: 50%;
+  height: 100%;
+  margin: 2px;
+}
+
+.première-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lieu {
@@ -21,8 +47,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: grey;
-  box-shadow: 25px 25px 20px -20px rgba(0, 0, 0, 0.45);
+  gap: 10px;
+  background-color: #EAEAEA;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+.styleLieu {
+  color: #353535;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .menu {
@@ -31,26 +65,64 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #F6F6F6;
+  padding-bottom: 20px;
+}
+
+.fontStyle7 {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.fontStyle5 {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.styleReserv {
+  width: 70%;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.styleReserv2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #353535;
+  font-size: 18px;
+  font-family: Roboto;
+  margin: 0;
 }
 
 .bouton {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  gap: 10px;
   font-size: 17px;
   padding: 20px;
-  border-radius: 25px;
-  border: 2px solid var(--filter-bg-color);
-  background-color: #FF79DA;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 20px;
   cursor: pointer;
-  height: 42px;
-  box-sizing: border-box;
-  margin: 0;
+  border: none;
 }
 
 .bouton:hover {
-  background-color: pink;
-  border: 2px solid var(--grey-tint-2, #d9d9d9);
+  background: linear-gradient(201deg, #9356DC 0%, #FF79DA 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
   transition-property: transform;
   transition-duration: 400ms;
 }
@@ -59,88 +131,195 @@
 }
 
 .bold {
+  color: #f2f2f2;
   font-weight: 700;
   white-space: nowrap;
 }
 
 .fonctionnement {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.boutonRectangle {
+.styleFonc {
+  padding-left: 10%;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.bouton-fonctionnement {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.ensemble-bouton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.ensemble-bouton h3 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  padding: 20px 10px;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+.ensemble-bouton h3 i {
+  color: #7E7E7E;
+  text-align: center;
+}
+.ensemble-bouton .ellipse1 {
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  width: 24px;
+  height: 24px;
+  top: 35%;
   border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  left: 13px;
+}
+.ensemble-bouton .ellipse2 {
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  width: 25px;
+  height: 25px;
+  top: 35%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  left: 13px;
+}
+.ensemble-bouton .ellipse3 {
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  width: 25px;
+  height: 25px;
+  top: 35%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  left: 13px;
+}
+.ensemble-bouton .boutonRectangle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 72px;
+  padding-left: 16px;
+  padding-right: 0;
+  background: #F6F6F6;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 20px;
+  border: none;
   cursor: pointer;
 }
 
-.boutonRectangle:hover {
-  background-color: none;
-  border: 2px solid var(--grey-tint-2, #d9d9d9);
-  transition-property: transform;
-  transition-duration: 400ms;
-}
-.boutonRectangle:hover:hover {
-  transform: scale(1.15);
+.fa-store {
+  color: #9356DC !important;
 }
 
 .restau {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-color: #F6F6F6;
+  gap: 30px;
   align-items: center;
-  gap: 20px;
-  background-color: #f2f2f2;
 }
 
-.boiteImg {
+.carte {
   box-sizing: border-box;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.carte img {
+  object-fit: cover;
+}
+
+.imgCarte {
+  width: 346px;
+  height: 231px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+.ensemble-carte {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+.style-restaurant {
+  color: black;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.gapTitre {
+  margin-left: 20px;
+}
+
+.gapTexte {
+  margin-left: 30px;
+}
+
+.footer {
+  box-sizing: border-box;
+  padding: 25px;
+  background-color: #353535;
+}
+
+.imgFooter {
+  width: 25%;
+  filter: invert(100%);
+}
+
+.gapfooter {
+  gap: 10px;
+}
+
+li {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  background-color: #f2f2f2;
-  gap: 20px;
-  flex-wrap: nowrap;
-}
-
-.imgRestau {
-  justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 100px;
+  gap: 10px;
 }
 
-.test {
-  align-items: center;
+ul {
+  list-style: none;
 }
 
-p {
-  color: 0;
+.symbole {
+  filter: invert(100%);
 }
 
-.animation_title {
-  color: blue;
-}
-
-.aller p {
-  animation-duration: 5s;
-  animation-name: glissement;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-
-.dessin {
-  color: grey;
+.styleFooter {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
