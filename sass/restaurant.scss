@@ -1,0 +1,110 @@
+ /** Restaurant SCSS**/
+main {
+    background-color: #F6F6F6;
+}
+.arrow {
+    display: block;
+    margin-left: 0;
+}
+.image_header {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+.menu-restaurant {
+    display: flex;
+    flex-direction: column;
+}
+.menu-titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 40px 0px 0px;
+    background-color: #F6F6F6;
+    position: relative;
+    margin-top: -40px;
+    padding: 10px;
+    gap: 30px;
+}
+.bouton-entrée {
+    padding: 15px;
+}
+.rectangle-menu {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    height: 72px;
+}
+.fontStyle-menu {
+    color: #101010;
+    font-size: 28px;
+    font-family: Shrikhand;
+    font-weight: 400;
+}
+.titre-entrée {
+   border-bottom: 3px solid #99E2D0;
+   width: 15%;
+   color: black;
+   font-size: 16px;
+   font-family: Roboto;
+   font-weight: 300;
+}
+.titre-plats {
+    border-bottom: 3px solid #99E2D0;
+    width: 15%;
+    color: black;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 300;
+ }
+ .titre-dessert {
+    border-bottom: 3px solid #99E2D0;
+    width: 15%;
+    color: black;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 300;
+ }
+.titre-un {
+    transform: translateY(50%);
+    color: black;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+.titre-deux {
+    transform: translateY(-90%);
+    color: black;
+    font-size: 15.04px;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+    main {
+        background-color: white;
+    }
+    .menu-container {
+        background-color: #F6F6F6;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+    .Entrées {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+    .plats {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+    .desserts {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+}
