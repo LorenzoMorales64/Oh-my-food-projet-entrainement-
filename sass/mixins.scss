@@ -1,0 +1,7 @@
+@mixin heart { 
+    background-image: linear-gradient(to top, $première-couleur 20%, $deuxième-couleur 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-image: $transition-couleur; 
+}

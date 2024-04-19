@@ -7,6 +7,8 @@ main {
 .arrow {
   display: block;
   margin-left: 0;
+  font-size: 22px;
+  margin-left: 10px;
 }
 
 .image_header {
@@ -32,21 +34,43 @@ main {
   gap: 30px;
 }
 
-.bouton-entrée {
-  padding: 15px;
+.Bouton-entrée {
+  padding-bottom: 15px;
+}
+
+.span-decollage {
+  transform: translate(-50%, 58%);
 }
 
 .rectangle-menu {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   background-color: white;
   border-radius: 15px;
   margin: 15px;
-  padding: 15px;
-  height: 72px;
+  height: 90px;
+  cursor: pointer;
+}
+.rectangle-menu:hover .selection-menu {
+  background-color: #99E2D0;
+  transform: translate(-100%);
+  transition: all 250ms;
+}
+.rectangle-menu:hover .selection-menu i {
+  color: white;
+}
+.rectangle-menu:hover .span-prix {
+  transform: translate(-280%);
+  transition: all 250ms;
+}
+
+.ensemble-titreH {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .fontStyle-menu {
@@ -56,9 +80,21 @@ main {
   font-weight: 400;
 }
 
+.Entrées {
+  animation: apparition 1s ease-in;
+}
+
+.plats {
+  animation: apparition 2s ease-in;
+}
+
+.desserts {
+  animation: apparition 3s ease-in;
+}
+
 .titre-entrée {
   border-bottom: 3px solid #99E2D0;
-  width: 15%;
+  width: 40px;
   color: black;
   font-size: 16px;
   font-family: Roboto;
@@ -67,7 +103,7 @@ main {
 
 .titre-plats {
   border-bottom: 3px solid #99E2D0;
-  width: 15%;
+  width: 40px;
   color: black;
   font-size: 16px;
   font-family: Roboto;
@@ -76,7 +112,7 @@ main {
 
 .titre-dessert {
   border-bottom: 3px solid #99E2D0;
-  width: 15%;
+  width: 40px;
   color: black;
   font-size: 16px;
   font-family: Roboto;
@@ -97,6 +133,61 @@ main {
   font-size: 15.04px;
   font-family: Roboto;
   font-weight: 300;
+}
+
+.span-prix {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  margin-left: auto;
+}
+
+.selection-menu {
+  border-radius: 0px 15px 15px 0px;
+  background: transparent;
+  border-style: none;
+  margin-right: -4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.selection-menu i {
+  color: transparent;
+}
+
+.button-commande {
+  background: linear-gradient(to top, #9356DC 20%, #FF79DA 100%);
+  border-radius: 25px;
+  width: 218px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  border-style: none;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 250ms;
+}
+
+.button-commande:hover {
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  transition: transform 0.5s;
+  box-shadow: 5px 5px 18px 3px #868686;
+}
+
+.animation-heart {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1200ms;
+}
+.animation-heart:hover {
+  opacity: 1;
 }
 
 @media (min-width: 1024px) {
@@ -133,14 +224,6 @@ main {
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes progresscheck {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 @keyframes apparition {
@@ -487,6 +570,20 @@ ul {
 
 .styleFooter {
   color: #FFFFFF;
+}
+
+.animation-heart {
+  background-image: linear-gradient(to top, #9356DC 20%, #FF79DA 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-image: linear-gradient(to top, #9356DC 20%, #FF79DA 100%);
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1200ms;
+}
+.animation-heart:hover {
+  opacity: 1;
 }
 
 /*ANIMATION*/

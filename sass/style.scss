@@ -1,5 +1,6 @@
 @import "./restaurant.scss";
 @import "./animation.scss";
+@import "./mixins.scss";
 
  /** Restaurant SCSS**/
 /* couleur */
@@ -10,6 +11,7 @@ $couleur-grise: #353535;
 $couleur-blanche-grisé: #F6F6F6;
 $background-color: #f2f2f2;
 $couleur-fond-carte: #FFFFFF;
+$transition-couleur: linear-gradient(to top, #9356DC 20%, #FF79DA 100%);
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -323,6 +325,15 @@ ul {
 }
 .styleFooter {
     color: #FFFFFF;
+}
+.animation-heart {
+    @include heart;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1200ms;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 /*ANIMATION*/
