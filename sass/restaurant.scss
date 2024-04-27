@@ -164,7 +164,9 @@ main {
     transition: transform 0.5s;
     box-shadow: 5px 5px 18px 3px #868686;
   } 
-  .animation-heart { 
+.animation-heart { 
+    position: absolute;
+    transform: translate(-32px, 0px);
     opacity: 0;
     transition-property: all;
     transition-duration: 1200ms;
