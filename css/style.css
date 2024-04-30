@@ -39,12 +39,15 @@ main {
 }
 
 .span-decollage {
-  transform: translate(-50%, 58%);
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 
 .rectangle-menu {
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
   background-color: white;
   border-radius: 15px;
   margin: 15px;
@@ -53,24 +56,22 @@ main {
 }
 .rectangle-menu:hover .selection-menu {
   background-color: #99E2D0;
-  transform: translate(-100%);
+  margin: 0;
   transition: all 250ms;
 }
 .rectangle-menu:hover .selection-menu i {
   color: white;
 }
 .rectangle-menu:hover .span-prix {
-  transform: translate(-280%);
   transition: all 250ms;
 }
 
 .ensemble-titreH {
-  display: flex;
-  flex-direction: column;
   margin-left: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  position: relative;
 }
 
 .fontStyle-menu {
@@ -120,19 +121,23 @@ main {
 }
 
 .titre-un {
-  transform: translateY(50%);
   color: black;
   font-size: 18px;
   font-family: Roboto;
   font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .titre-deux {
-  transform: translateY(-90%);
   color: black;
   font-size: 15.04px;
   font-family: Roboto;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .span-prix {
@@ -153,7 +158,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .selection-menu i {
@@ -244,10 +248,6 @@ body {
 
 .couleurFond {
   background-color: #f2f2f2;
-}
-
-.main-container {
-  max-width: 1980px;
 }
 
 .logo-align {
@@ -372,7 +372,6 @@ body {
 }
 
 .styleFonc {
-  padding-left: 10%;
   width: 100%;
   height: 100%;
   color: black;
