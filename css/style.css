@@ -58,6 +58,7 @@ main {
   background-color: #99E2D0;
   margin: 0;
   transition: all 250ms;
+  position: relative;
 }
 .rectangle-menu:hover .selection-menu i {
   color: white;
@@ -158,6 +159,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 .selection-menu i {
@@ -546,8 +548,12 @@ a {
 }
 
 .imgFooter {
-  width: 25%;
+  width: 139px;
   filter: invert(100%);
+}
+
+.footer_padding {
+  padding-left: 0;
 }
 
 .gapfooter {
@@ -641,6 +647,9 @@ ul {
   }
   .imgFooter {
     width: 138px;
+  }
+  .a-resize {
+    transform: translate(6px, 16px);
   }
 }
 

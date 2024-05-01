@@ -51,6 +51,7 @@ main {
             background-color: #99E2D0;
             margin: 0;
             transition: all 250ms;
+            position: relative;
         }
         .selection-menu i {
             color: white;
@@ -144,6 +145,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 .selection-menu i {
     color: transparent;

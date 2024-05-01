@@ -11,7 +11,7 @@
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="./css/style.css">
-        <link href="./sass/style.scss">
+        <link rel="stylesheet" href="./sass/style.scss">
         <title>Entrainement OH MY FOOD</title>
     </head>
 
@@ -39,15 +39,15 @@
             <div class="bouton-fonctionnement">
                 <div class="ensemble-bouton">
                     <p class="ellipse1">1</p>
-                    <button class="boutonRectangle"><h3 class="fontStyle5"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</h3></button>
+                    <div class="boutonRectangle"><h3 class="fontStyle5"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</h3></div>
                 </div>
                 <div class="ensemble-bouton">
                     <p class="ellipse2">2</p>
-                    <button class="boutonRectangle"><h3 class="fontStyle5"><i class="fa-solid fa-list-ul"></i>Composez votre menu</h3></button>
+                    <div class="boutonRectangle"><h3 class="fontStyle5"><i class="fa-solid fa-list-ul"></i>Composez votre menu</h3></div>
                 </div>
                 <div class="ensemble-bouton">
                     <p class="ellipse3">3</p>
-                    <button class="boutonRectangle"><h3 class="fontStyle5"><i class="fa-solid fa-store"></i>Dégustez au restaurant</h3></button>    
+                    <div class="boutonRectangle"><h3 class="fontStyle5"><i class="fa-solid fa-store"></i>Dégustez au restaurant</h3></div>    
                 </div>
             </div>
         </section>
@@ -55,7 +55,7 @@
         <section class="menu-restau">
             <h1 class="menus-h1">Restaurants</h1>
             <div class="menu-carte">
-                <a href="./restaurants/Menu(1)-La palette du goût.html" class="carte">
+                <a href="./restaurants/Menu(1)-La_palette_du_goût.html" class="carte">
                     <div class="div-carte">
                         <div class="ensemble-carte">               
                             <div class="carte-new"></div> <!--Petit contenu "nouveau" sur la carte 1 et 2-->
@@ -70,7 +70,7 @@
                     </div>
                 </a>
                     
-                <a href="./restaurants/Menu(2)-La note enchantée.html" class="carte">
+                <a href="./restaurants/Menu(2)-La_note_enchantée.html" class="carte">
                     <div class="div-carte carte-spé">
                         <div class="ensemble-carte">
                             <div class="carte-new"></div>  <!--Petit contenu "nouveau" sur la carte 1 et 2-->                    
@@ -85,7 +85,7 @@
                     </div>  
                 </a> 
     
-                <a href="./restaurants/Menu(3)-à la française.html" class="carte">
+                <a href="./restaurants/Menu(3)-à_la_française.html" class="carte">
                     <div class="div-carte">
                         <div class="ensemble-carte">
                             <img class="carte-img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="à la française">
@@ -99,7 +99,7 @@
                     </div> 
                 </a>
     
-                <a href="./restaurants/Menu(4)-Les délires du sens.html" class="carte">
+                <a href="./restaurants/Menu(4)-Les_délires_du_sens.html" class="carte">
                     <div class="div-carte">
                         <div class="ensemble-carte">
                             <img class="carte-img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
@@ -114,14 +114,17 @@
                 </a>
             </div>    
         </section>
+        <footer class="footer">
+            <div class="footer-media">
+                <img src="./images/logo/ohmyfood@2x.svg" class="imgFooter" alt="logofooter">
+                <ul class="footer-media footer_padding">
+                    <li><i class="fa-solid fa-utensils symbole"></i><p class="styleFooter">Proposer un restaurant</p></li>
+                    <li><i class="fa-solid fa-handshake-angle symbole"></i><p class="styleFooter">Devenir partenaire</p></li>
+                    <li><p class="styleFooter">Mentions légales</p></li>
+                </ul>
+                <a class="a-resize" href="mailto:ohmyfood@gmail.com"><p class="styleFooter">Contact</p></a>
+            </div>
+        </footer>
     </body>
-    <footer class="footer">
-        <div class="footer-media">
-            <img src="./images/logo/ohmyfood@2x.svg" class="imgFooter" alt="logofooter">
-            <li><i class="fa-solid fa-utensils symbole"></i><p class="styleFooter">Proposer un restaurant</p></li>
-            <li><i class="fa-solid fa-handshake-angle symbole"></i><p class="styleFooter">Devenir partenaire</p></li>
-            <li><p class="styleFooter">Mentions légales</p></li>
-            <a href="mailto:ohmyfood@gmail.com"><li><p class="styleFooter">Contact</p></li></a>
-        </div>
-    </footer>
+    
 </html>

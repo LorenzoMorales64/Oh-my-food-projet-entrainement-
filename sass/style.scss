@@ -300,9 +300,12 @@ a {
     background-color: #353535;
 }
 .imgFooter {
-    width: 25%;
+    width: 139px;
     filter: invert(100%);
 
+}
+.footer_padding {
+    padding-left: 0;
 }
 .gapfooter {
     gap: 10px;
@@ -386,5 +389,8 @@ ul {
     }
     .imgFooter {
         width: 138px;
+    }
+    .a-resize {
+        transform: translate(6px, 16px);
     }
 }
